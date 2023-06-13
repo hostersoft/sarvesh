@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Password Protected</title>
+</head>
+<body oncontextmenu="alert('We cant allow you this feature!'); return false;">
+<style>
+.pass{
+text-align: center;
+width: 200px;
+height: 30px;
+}
+.no{
+cursor: pointer;
+}
+.link{
+font-size: 25px;
+}
+.link:hover{
+color: red;
+}
+body{
+background-color: lightblue;
+font-family: sans-serif;
+}
+</style>
+<script>
+function password(){
+let pass = document.getElementById('password').value
+
+if(pass == "sarvesh"){
+window.location.href = "submit.html";
+}else if(pass == ""){
+alert('You didnt even type the Password!')
+}else{
+alert('Incorrect password')
+}
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<input type='password' id='password' placeholder='Type Your password' class='pass'> <input type='Submit' onClick='password()' value='Enter' class='no'>
+</center>
+<br>
+<br>
+<center>
+<a href='forgot.html' class='link'>Forgot password? Click here</a>
+</center>
+<br>
+<br>
+<center>
+<a href='visitor.html' class='link'>Are you a visitor?</a>
+</center>
+</body>
+</html>
